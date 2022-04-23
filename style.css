@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#banner {
+  background: url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo {
+  color: #fff;
+  font-size: 28px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font-family: "Tapestry", cursive;
+}
+nav {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+nav ul {
+  display: flex;
+  float: right;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 16px 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 21px;
+  border-radius: 3px;
+  background: #09111354;
+}
+
+.banner-text {
+  text-align: center;
+  padding-top: 435px;
+  color: #fff;
+}
+.banner-text p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.banner-btn {
+  margin: 30px auto 0;
+}
+.banner-btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  transition: color 0.5s;
+}
+/* banner end */
+
+#features {
+  width: 100%;
+  padding: 0 0 50px 0;
+}
+
+.title-text {
+  text-align: center;
+  padding: 0 0 70px 0;
+}
+.title-text-special {
+  padding: 50px 0 70px 0 !important;
+}
+
+.title-text h1 {
+  font-size: 50px;
+}
+
+.features-box {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.features-img {
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.features-img img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.features h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #02060e;
+}
+
+.features-des {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.features-icon .features-line-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #04132d;
+  border: 1px solid #04132d;
+}
+
+.features-text p {
+  padding: 0 20px;
+  text-align: initial;
+}
+/* feature end */
+
+#service {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+
+.service-box {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.single-service {
+  text-align: center;
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+}
+
+.single-service img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+/* service end */
+
+#feedback {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.feedback-row {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  grid-gap: 15px;
+}
+
+.feedback-col {
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px #00968814;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.feedback-col p {
+  font-size: 14px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.user img {
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.user-info .fa {
+  margin-left: 10px;
+  color: #27c0ff;
+  font-size: 20px;
+}
+
+.user-info small {
+  color: #009688;
+}
+
+.feedback-col:hover {
+  transform: translateY(-7px);
+}
+/* feedback end */
+#footer {
+  padding: 100px 0 20px;
+  background: #efefef;
+  position: relative;
+}
+
+.footer-row {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-row h1 {
+  margin: 10px 0;
+}
+
+.footer-row p {
+  line-height: 35px;
+}
+.contact-input {
+  text-align: center;
+}
+.contact-input input[type="email"] {
+  border: none;
+  padding: 10px 60px;
+  margin-right: 10px;
+}
+.contact-input input[type="submit"] {
+  padding: 7px 20px;
+  border: none;
+  font-size: 16px;
+  background: black;
+  color: white;
+}
+.social-links {
+  text-align: center;
+}
+
+.social-links .fa-brands {
+  height: 40px;
+  width: 25px;
+  font-size: 22px;
+  line-height: 40px;
+  margin: 20px 10px 0;
+  color: #000;
+  cursor: pointer;
+}
+
+.social-links p {
+  margin-top: 40px;
+}

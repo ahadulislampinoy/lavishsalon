@@ -1,0 +1,44 @@
+@media screen and (max-width: 576px) {
+  .features-box {
+    grid-template-columns: 1fr;
+  }
+  .feedback-row {
+    grid-auto-flow: row;
+  }
+}
+@media screen and (max-width: 770px) {
+  .features-img img {
+    width: 100%;
+  }
+
+  #features {
+    overflow-x: hidden;
+  }
+  #service {
+    overflow-x: hidden;
+  }
+
+  .single-service {
+    margin-bottom: 30px;
+  }
+  #feedback {
+    overflow-x: hidden;
+  }
+  .footer-left,
+  .footer-right {
+    font-size: 14px;
+  }
+
+  .footer-img {
+    top: 25%;
+  }
+
+  #footer {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 1120px) {
+  nav {
+    display: none;
+  }
+}
